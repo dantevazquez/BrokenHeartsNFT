@@ -28,7 +28,7 @@ def createImage(crown, heart, leftHand, rightHand, shoes, name):
     merge2 = Image.alpha_composite(merge1, leftHand)
     merge3 = Image.alpha_composite(merge2, rightHand)
     finalMerge = Image.alpha_composite(merge3, shoes)
-    finalMerge.save("broken_heart_" + name + ".png")
+    finalMerge.save("./nfts/broken_heart_" + name + ".png")
 
 def getRandomCrown(crown):
     return crown[random.randint(0, NUM_CROWNS - 1)]
