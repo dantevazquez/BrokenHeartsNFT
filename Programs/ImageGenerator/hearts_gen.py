@@ -2,7 +2,11 @@ from PIL import Image
 import random
 
 NUM_NFTS = 5
-NUM_ATTRIBUTES = 0
+NUM_CROWNS = 0
+NUM_HEARTS = 0
+NUM_LEFT_HANDS = 0
+NUM_RIGHT_HANDS = 0
+NUM_SHOES = 0
 
 def createImage(crown, heart, leftHand, rightHand, shoes, name):
  
@@ -13,19 +17,19 @@ def createImage(crown, heart, leftHand, rightHand, shoes, name):
     finalMerge.save("broken_heart_" + name + ".png")
 
 def getRandomCrown(crown):
-    return crown[random.randint(0, NUM_ATTRIBUTES)]
+    return crown[random.randint(0, NUM_CROWNS)]
 
 def getRandomHeart(heart):
-    return heart[random.randint(0, NUM_ATTRIBUTES)]
+    return heart[random.randint(0, NUM_HEARTS)]
 
 def getRandomLeftHand(leftHand):
-    return leftHand[random.randint(0, NUM_ATTRIBUTES)]
+    return leftHand[random.randint(0, NUM_LEFT_HANDS)]
 
 def getRandomRightHand(rightHand):
-    return rightHand[random.randint(0, NUM_ATTRIBUTES)]
+    return rightHand[random.randint(0, NUM_RIGHT_HANDS)]
 
 def getRandomShoes(shoes):
-    return shoes[random.randint(0, NUM_ATTRIBUTES)]
+    return shoes[random.randint(0, NUM_SHOES)]
 
 #crowns
 crown = [
